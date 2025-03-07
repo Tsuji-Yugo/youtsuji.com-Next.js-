@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* リストのデフォルトの箇条書き「・」を削除 */
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #f0f0f0; /* 単色の背景 */
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding-top: 80px; /* ヘッダーの高さ分の余白を確保 */
+  max-width: 100%; /* 画面いっぱいに広げる */
+  margin: 0;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: #007AFF;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #5AC8FA;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #007AFF;
+  font-size: 2em;
+  border-bottom: 2px solid #5AC8FA;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc; /* ● (デフォルト) */
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+ul li a {
+  color: #007AFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: #5AC8FA;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .content {
+    padding-top: 60px;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+  
+  /* ハンバーガーメニューの調整など、レスポンシブな変更もここで行う */
+}
