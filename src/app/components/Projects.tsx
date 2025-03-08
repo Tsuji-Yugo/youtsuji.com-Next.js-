@@ -4,14 +4,14 @@ import React from "react";
 const Projects = () => {
   const works = [
     {
-      title: "フルマラソンタイム予測ツール",
+      title: "Full Marathon Time Prediction Tool",
       link: "https://www.youtsuji.com/html/time.html",
-      description: "10Kタイムからフルマラソンの完走タイムを予測するツール。",
+      description: "A tool to predict full marathon finishing times from 10K times.",
     },
     {
-      title: "【論文】攻撃時に受ける守備プレッシャーの違い",
+      title: "[Paper] Differences in Defensive Pressure Experienced During Attacks in Soccer",
       link: "https://www.youtsuji.com/assets/%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
-      description: "サッカーの攻撃時に受ける守備プレッシャーの影響を分析した研究論文。",
+      description: "A research paper analyzing the impact of defensive pressure experienced during attacks in soccer.",
     },
   ];
 

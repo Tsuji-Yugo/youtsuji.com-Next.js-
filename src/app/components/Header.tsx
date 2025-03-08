@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
@@ -13,9 +13,15 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-80 shadow-md w-full">
       <div className="max-w-full mx-auto px-6 py-4 flex items-center justify-between">
-        {/* ロゴ */}
+        {/* ロゴ（アイコン画像） */}
         <div className="text-2xl font-bold text-white">
-          <a href="#hero">ゆうつじ</a>
+          <a href="#hero">
+            <img
+              src="/雪だるまアイコン.jpg" // アイコン画像のパスをここに入れてください
+              alt="Youtsuji Logo"
+              className="w-10 h-10 object-contain" // アイコンのサイズを調整
+            />
+          </a>
         </div>
 
         {/* ハンバーガーメニューアイコン（スマホサイズ） */}
@@ -43,20 +49,10 @@ const Header = () => {
 
         {/* ナビゲーション（PC版） */}
         <nav className="hidden lg:flex">
-          <ul className="flex space-x-6 text-lg text-white">
+          <ul className="flex space-x-6 text-lg text-white list-none"> {/* リストマーカーを消すために list-none を追加 */}
             <li>
               <Link
-                to="hero"
-                smooth={true}
-                duration={500}
-                className="hover:text-blue-400 cursor-pointer"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="about"
+                to="about" // ターゲットIDと一致させる
                 smooth={true}
                 duration={500}
                 className="hover:text-blue-400 cursor-pointer"
@@ -66,7 +62,27 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="projects"
+                to="certifications" // ターゲットIDと一致させる
+                smooth={true}
+                duration={500}
+                className="hover:text-blue-400 cursor-pointer"
+              >
+                Certifications
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="extracurricular" // ターゲットIDと一致させる
+                smooth={true}
+                duration={500}
+                className="hover:text-blue-400 cursor-pointer"
+              >
+                Extracurricular
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="projects" // ターゲットIDと一致させる
                 smooth={true}
                 duration={500}
                 className="hover:text-blue-400 cursor-pointer"
@@ -76,12 +92,12 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="contact"
+                to="hobbies" // ターゲットIDと一致させる
                 smooth={true}
                 duration={500}
                 className="hover:text-blue-400 cursor-pointer"
               >
-                Contact
+                Hobbies
               </Link>
             </li>
           </ul>
@@ -90,25 +106,12 @@ const Header = () => {
 
       {/* ハンバーガーメニュー（スマホサイズ） */}
       <div
-        className={`lg:hidden absolute top-16 left-0 right-0 bg-gray-900 bg-opacity-80 py-4 ${
-          isMenuOpen ? 'block' : 'hidden'
-        }`}
+        className={`lg:hidden absolute top-16 left-0 right-0 bg-gray-900 bg-opacity-80 py-4 ${isMenuOpen ? 'block' : 'hidden'}`}
       >
-        <ul className="flex flex-col items-center space-y-4 text-lg text-white">
+        <ul className="flex flex-col items-center space-y-4 text-lg text-white list-none"> {/* リストマーカーを消すために list-none を追加 */}
           <li>
             <Link
-              to="hero"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-              className="hover:text-blue-400 cursor-pointer"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="about"
+              to="about" // ターゲットIDと一致させる
               smooth={true}
               duration={500}
               onClick={toggleMenu}
@@ -119,7 +122,29 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="projects"
+              to="certifications" // ターゲットIDと一致させる
+              smooth={true}
+              duration={500}
+              onClick={toggleMenu}
+              className="hover:text-blue-400 cursor-pointer"
+            >
+              Certifications
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="extracurricular" // ターゲットIDと一致させる
+              smooth={true}
+              duration={500}
+              onClick={toggleMenu}
+              className="hover:text-blue-400 cursor-pointer"
+            >
+              Extracurricular
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="projects" // ターゲットIDと一致させる
               smooth={true}
               duration={500}
               onClick={toggleMenu}
@@ -130,13 +155,13 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="contact"
+              to="hobbies" // ターゲットIDと一致させる
               smooth={true}
               duration={500}
               onClick={toggleMenu}
               className="hover:text-blue-400 cursor-pointer"
             >
-              Contact
+              Hobbies
             </Link>
           </li>
         </ul>
