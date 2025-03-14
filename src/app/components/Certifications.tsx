@@ -41,8 +41,7 @@ const Certifications = () => {
 
   useEffect(() => {
     if (isSectionVisible) {
-      // セクションが表示されたら、順番に資格リストのアイテムを表示
-      const timeoutId = certifications.forEach((_, index) => {
+      certifications.forEach((_, index) => {
         setTimeout(() => {
           setIsVisible((prevState) => {
             const updatedVisibility = [...prevState];
@@ -51,10 +50,9 @@ const Certifications = () => {
           });
         }, index * 300); // 300msごとに表示
       });
-
-      return () => clearTimeout(timeoutId); // クリーンアップ
     }
   }, [isSectionVisible]);
+  
 
   return (
     <section
