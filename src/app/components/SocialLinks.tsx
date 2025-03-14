@@ -6,22 +6,22 @@ const SocialLinks = () => {
   const socialLinks = [
     {
       platform: "Twitter",
-      link: "https://twitter.com/yourprofile",
+      link: "https://x.com/youtsuji3",
       icon: <FaTwitter size={40} />,
     },
     {
       platform: "GitHub",
-      link: "https://github.com/yourprofile",
+      link: "https://github.com/Tsuji-Yugo",
       icon: <FaGithub size={40} />,
     },
     {
       platform: "Instagram",
-      link: "https://instagram.com/yourprofile",
+      link: "https://www.instagram.com/04_yg/",
       icon: <FaInstagram size={40} />,
     },
     {
       platform: "Qiita",
-      link: "https://qiita.com/yourprofile",
+      link: "https://qiita.com/youtsuji",
       icon: <SiQiita size={40} />,
     },
   ];

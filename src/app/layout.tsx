@@ -2,8 +2,8 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 export const metadata = {
-  title: "ゆうつじ.com",
-  description: "ポートフォリオサイト",
+  title: "TsujiYugo-portfolio",
+  description: "辻悠吾のポートフォリオサイト",
 };
 
 interface LayoutProps {
